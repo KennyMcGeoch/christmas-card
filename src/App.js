@@ -18,7 +18,11 @@ function App() {
 const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
-let weather = snowTwo
+let weather = snowOne
+let salutation = "Dear"
+let recipient = "Bomme"
+let sender = "Kenny"
+let greetingMsg = "I wish you a Merry Christmas and a Happy New Year"
   return (
     <div className="App">
       <Particles
@@ -27,7 +31,11 @@ let weather = snowTwo
             loaded={particlesLoaded}
             options={weather}/>
       <header className="App-header">
-        <h1>Placeholder</h1>
+        <h1 id="zindex">{salutation} {recipient} <br/><br/><br/>
+        
+        {greetingMsg} <br/><br/><br/>
+        
+        From {sender}</h1>
       </header>
     </div>
   );  

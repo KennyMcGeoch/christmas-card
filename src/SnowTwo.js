@@ -106,7 +106,13 @@ const snowTwo = {
         }
       }
     },
-    retina_detect: true
+    retina_detect: true,
+    background: {
+        image: "url('https://images.pexels.com/photos/1146642/pexels-photo-1146642.jpeg')",
+        position: "fixed",
+        repeat: "no-repeat",
+        size: "cover",
+      }
   }
 
 export default snowTwo

@@ -112,6 +112,11 @@ const snowOne = {
       }
     },
     detectRetina: true,
+    background: {
+        image: "url('https://images.pexels.com/photos/1146642/pexels-photo-1146642.jpeg')",
+        repeat: "no-repeat",
+        size: "cover",
+      }
   }
 
   export default snowOne

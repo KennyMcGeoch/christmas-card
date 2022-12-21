@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+#zindex{
+  z-index: 1;
+}

@@ -1,7 +1,10 @@
 const snowThree = {
     background: {
-      color: "#000000"
-    },
+        image: "url('https://images.pexels.com/photos/1146642/pexels-photo-1146642.jpeg')",
+        position: "fixed",
+        repeat: "no-repeat",
+        size: "cover",
+      },
     particles: {
       color: { value: "#fff" },
       move: {
@@ -35,6 +38,7 @@ const snowThree = {
         value: { min: 0, max: 100 }
       }
     }
+    
   }
 
 export default snowThree
