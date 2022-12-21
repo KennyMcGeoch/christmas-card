@@ -19,10 +19,11 @@ const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
 let weather = snowOne
-let salutation = "Dear"
+let salutation = "Chère"
+let farewell = "Gros Baisers"
 let recipient = "Bomme"
 let sender = "Kenny"
-let greetingMsg = "I wish you a Merry Christmas and a Happy New Year"
+let greetingMsg = "Joyeux Noël et Bonne Année!"
   return (
     <div className="App">
       <Particles
@@ -35,7 +36,7 @@ let greetingMsg = "I wish you a Merry Christmas and a Happy New Year"
         
         {greetingMsg} <br/><br/><br/>
         
-        From {sender}</h1>
+        {farewell} {sender}</h1>
       </header>
     </div>
   );  
