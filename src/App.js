@@ -24,8 +24,6 @@ const particlesLoaded = useCallback(async container => {
 }, []);
 
 let customData =document.URL.toString().slice(47)
-console.log(customData)
-console.log(document.URL.toString())
 let weather
 if (customData[0] === "1"){
   weather = snowOne
