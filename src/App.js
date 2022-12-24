@@ -2,9 +2,13 @@ import './App.css';
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import salut from './Salutation'
+import getPeople from './Persons';
 import snowOne from './SnowOne';
 import snowTwo from './SnowTwo';
 import snowThree from './SnowThree';
+
+
 
 function App() {
   const particlesInit = useCallback(async engine => {
@@ -18,12 +22,21 @@ function App() {
 const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
-let weather = snowOne
-let salutation = "Chère"
-let farewell = "Gros Baisers"
-let recipient = "Bomme"
-let sender = "Kenny"
-let greetingMsg = "Joyeux Noël et Bonne Année!"
+
+let customData =document.URL.toString().slice(31)
+let weather
+if (customData[0] === "1"){
+  weather = snowOne
+}
+else if (customData[0] === "2"){
+  weather = snowTwo
+}
+else{
+  weather = snowThree
+}
+
+let salutation = salut(customData[1])
+let senders = getPeople(customData.slice(2))
   return (
     <div className="App">
       <Particles
@@ -32,11 +45,11 @@ let greetingMsg = "Joyeux Noël et Bonne Année!"
             loaded={particlesLoaded}
             options={weather}/>
       <header className="App-header">
-        <h1 id="zindex">{salutation} {recipient} <br/><br/><br/>
+        <h1 id="zindex">{salutation[0]} {senders[0]} <br/><br/><br/>
         
-        {greetingMsg} <br/><br/><br/>
+        {salutation[1]} <br/><br/><br/>
         
-        {farewell} {sender}</h1>
+        {salutation[2]}<br/> <br/>{senders[1]}</h1>
       </header>
     </div>
   );  
