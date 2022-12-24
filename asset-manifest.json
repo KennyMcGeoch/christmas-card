@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/christmas-card/static/css/main.0ec8bdf9.css",
+    "main.js": "/christmas-card/static/js/main.ff4b1883.js",
+    "static/js/787.4b846e2a.chunk.js": "/christmas-card/static/js/787.4b846e2a.chunk.js",
+    "index.html": "/christmas-card/index.html",
+    "main.0ec8bdf9.css.map": "/christmas-card/static/css/main.0ec8bdf9.css.map",
+    "main.ff4b1883.js.map": "/christmas-card/static/js/main.ff4b1883.js.map",
+    "787.4b846e2a.chunk.js.map": "/christmas-card/static/js/787.4b846e2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ec8bdf9.css",
+    "static/js/main.ff4b1883.js"
+  ]
+}
